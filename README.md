@@ -53,7 +53,7 @@ app localized name -> InfoPlist.string -> CFBundleName
 ## License
 
 Mantle is released under the MIT license. See
-[LICENSE.md](https://github.com/Tuccuay/TUCAssetsHelper/blob/master/LICENSE.md).
+[LICENSE.md](https://github.com/Tuccuay/TUCAssetsHelper/blob/master/LICENSE).
 
 ## More Info
 
