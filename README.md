@@ -1,4 +1,8 @@
 # TUCAssetsHelper
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+[![CocoaPods](https://img.shields.io/cocoapods/v/TUCAssetsHelper.svg)]()
+[![CocoaPods](https://img.shields.io/cocoapods/p/TUCAssetsHelper.svg)]()
+
 Save `UIImage *` to iOS devices Photos Library: `[image tuc_saveToCameraRoll]`, well down!
 
 TUCAssetsHelper using Photos Framework, is supporting iOS 8.0 and newer, not support iOS 7 (need ALAssetsLibrary).
@@ -53,7 +57,7 @@ app localized name -> InfoPlist.string -> CFBundleName
 ## License
 
 Mantle is released under the MIT license. See
-[LICENSE.md](https://github.com/Tuccuay/TUCAssetsHelper/blob/master/LICENSE).
+[LICENSE](https://github.com/Tuccuay/TUCAssetsHelper/blob/master/LICENSE).
 
 ## More Info
 
