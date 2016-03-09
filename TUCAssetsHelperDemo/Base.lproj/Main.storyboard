@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="u3s-Md-Saa">
+                                <rect key="frame" x="182.5" y="20" width="236.5" height="151"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9k1-bN-KDf">
+                                        <rect key="frame" x="53.5" y="0.0" width="129" height="30"/>
+                                        <state key="normal" title="save to camera roll"/>
+                                        <connections>
+                                            <action selector="saveToCameraRoll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oya-rB-kdh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdp-hz-9jv">
+                                        <rect key="frame" x="9" y="30" width="218" height="30"/>
+                                        <state key="normal" title="save to app bundle name album"/>
+                                        <connections>
+                                            <action selector="saveToAppBundleNameAlbum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yvb-xA-QyS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcH-lf-tKO">
+                                        <rect key="frame" x="2.5" y="60" width="231" height="30"/>
+                                        <state key="normal" title="save to app localized name album"/>
+                                        <connections>
+                                            <action selector="saveToAppLocalizedNameAlbum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ssu-Qq-ItB"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qi7-pA-gAb">
+                                        <rect key="frame" x="0.0" y="90" width="236.5" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="custom name：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2R-AM-xOb">
+                                                <rect key="frame" x="0.0" y="0.0" width="107.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iwa-nE-5pe">
+                                                <rect key="frame" x="107.5" y="0.0" width="97" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="bXH-N1-1Bq"/>
+                                                    <constraint firstAttribute="width" constant="97" id="uKQ-Q5-v1B"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQC-9s-rZR">
+                                                <rect key="frame" x="204.5" y="0.0" width="32" height="30"/>
+                                                <state key="normal" title="save"/>
+                                                <connections>
+                                                    <action selector="saveToCustomNameAlbum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eaz-5m-d4z"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bes-n9-gHS">
+                                        <rect key="frame" x="10" y="120" width="216" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="show debug message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRd-SP-YzL">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mpQ-wW-puE">
+                                                <rect key="frame" x="167" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TUCAssetsHelper-Canton-PRC" translatesAutoresizingMaskIntoConstraints="NO" id="Y7w-9T-rof">
+                                <rect key="frame" x="204" y="191" width="192" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="HBA-ly-Qrd"/>
+                                    <constraint firstAttribute="height" constant="256" id="HJL-re-csJ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y7w-9T-rof" firstAttribute="top" secondItem="u3s-Md-Saa" secondAttribute="bottom" constant="20" id="ESC-Ji-iLi"/>
+                            <constraint firstItem="u3s-Md-Saa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Xep-zT-sQc"/>
+                            <constraint firstItem="u3s-Md-Saa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XyL-hN-rkp"/>
+                            <constraint firstItem="Y7w-9T-rof" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ci6-zp-9Qe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customAlbumName" destination="Iwa-nE-5pe" id="PCE-ut-CPJ"/>
+                        <outlet property="showDebugMessageSwitch" destination="mpQ-wW-puE" id="xeP-Ia-y0I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="410" y="301"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TUCAssetsHelper-Canton-PRC" width="768" height="1024"/>
+    </resources>
+</document>
