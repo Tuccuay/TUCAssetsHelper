@@ -7,6 +7,17 @@ Save `UIImage *` to iOS devices Photos Library: `[image tuc_saveToCameraRoll]`, 
 
 TUCAssetsHelper using Photos Framework, is supporting iOS 8.0 and newer, not support iOS 7 (need ALAssetsLibrary).
 
+### Installation with CocoaPods
+
+To integrate TUCAssetsHelper into your Xcode project using CocoaPods, specify it in your `Podfile`:
+```ruby
+pod 'TUCAssetsHelper'
+```
+Then, run the following command:
+```bash
+pod install
+```
+
 ### save to camera roll
 ```objective-c
 [image tuc_saveToCameraRoll];
