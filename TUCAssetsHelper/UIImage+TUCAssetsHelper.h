@@ -30,22 +30,22 @@ typedef NS_ENUM(NSInteger, TUCAssetsHelperAuthorizationStatus) {
 
 @interface UIImage (TUCAssetsHelper)
 
-- (void)tuc_saveToCameraRoll;
+- (void)tuc_saveToCameraRoll  NS_SWIFT_NAME(tuc_saveToCameraRoll());
 - (void)tuc_saveToCameraRollSuccess:(nullable void (^)())success
-                            failure:(nullable void (^)(TUCAssetsHelperAuthorizationStatus status))failure;
+                            failure:(nullable void (^)(TUCAssetsHelperAuthorizationStatus status))failure NS_SWIFT_NAME(tuc_saveToCameraRoll(success:failure:));
 
 - (void)tuc_saveToAlbumWithAppBundleName;
 - (void)tuc_saveToAlbumWithAppBundleNameSuccess:(nullable void (^)())success
-                                        failure:(nullable void (^)(TUCAssetsHelperAuthorizationStatus status))failure;
+                                        failure:(nullable void (^)(TUCAssetsHelperAuthorizationStatus status))failure NS_SWIFT_NAME(tuc_saveToAlbumWithAppBundleName(success:failure:));
 
-- (void)tuc_saveToAlbumWithAppLocalizedName;
+- (void)tuc_saveToAlbumWithAppLocalizedName NS_SWIFT_NAME(tuc_saveToAlbumWithAppLocalizedName())  ;
 - (void)tuc_saveToAlbumWithAppLocalizedNameSuccess:(nullable void (^)())success
-                                         failure:(nullable void (^)(TUCAssetsHelperAuthorizationStatus status))failure;
+                                         failure:(nullable void (^)(TUCAssetsHelperAuthorizationStatus status))failure NS_SWIFT_NAME(tuc_saveToAlbumWithAppLocalizedName(success:failure:));
 
-- (void)tuc_saveToAlbumWithAlbumName:(NSString * _Nullable)albumName;
+- (void)tuc_saveToAlbumWithAlbumName:(NSString * _Nullable)albumName NS_SWIFT_NAME(tuc_saveTo(album:));
 - (void)tuc_saveToAlbumWithAlbumName:(NSString * _Nullable)albumName
                              success:(nullable void (^)())success
-                             failure:(nullable void (^)(TUCAssetsHelperAuthorizationStatus status))failure;
+                             failure:(nullable void (^)(TUCAssetsHelperAuthorizationStatus status))failure NS_SWIFT_NAME(tuc_saveTo(album:success:failure:));
 
 
 
