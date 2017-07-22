@@ -34,7 +34,7 @@ typedef NS_ENUM(NSInteger, TUCAssetsHelperAuthorizationStatus) {
 - (void)tuc_saveToCameraRollSuccess:(nullable void (^)())success
                             failure:(nullable void (^)(TUCAssetsHelperAuthorizationStatus status))failure NS_SWIFT_NAME(tuc_saveToCameraRoll(success:failure:));
 
-- (void)tuc_saveToAlbumWithAppBundleName;
+- (void)tuc_saveToAlbumWithAppBundleName NS_SWIFT_NAME(tuc_saveToAlbumWithAppBundleName());
 - (void)tuc_saveToAlbumWithAppBundleNameSuccess:(nullable void (^)())success
                                         failure:(nullable void (^)(TUCAssetsHelperAuthorizationStatus status))failure NS_SWIFT_NAME(tuc_saveToAlbumWithAppBundleName(success:failure:));
 

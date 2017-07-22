@@ -29,6 +29,24 @@ pod install
     NSLog(@"save to camera roll: Denied!");
 }];
 ```
+*OR Swift*
+```swift
+image.tuc_saveToCameraRoll()
+
+image.tuc_saveToCameraRoll(success:{() in
+
+}, failure: {(status) in 
+    switch(satus) {
+        case .denied:
+            print("save to camera roll: success!")
+            break
+        case .restricted:
+            print("save to camera roll: Denied!")
+    }
+})
+
+```
+
 
 ### save to app bundle name album
 app bundle name -> Info.plist -> Bundle Name(CFBundleName)
@@ -42,6 +60,23 @@ app bundle name -> Info.plist -> Bundle Name(CFBundleName)
 }];
 ```
 
+*OR Swift*
+```swift
+image.tuc_saveToAlbumWithAppBundleName()
+
+image.tuc_saveToAlbumWithAppBundleName(success:{() in
+
+}, failure: {(status) in 
+    switch(satus) {
+        case .denied:
+            print("save to camera roll: success!")
+            break
+        case .restricted:
+            print("save to camera roll: Denied!")
+    }
+})
+
+```
 ### save to app localized name album
 app localized name -> InfoPlist.string -> CFBundleName
 ```objective-c
@@ -53,7 +88,23 @@ app localized name -> InfoPlist.string -> CFBundleName
     NSLog(@"save to app localized name album: Denied!");
 }];
 ```
+*OR Swift*
+```swift
+image.tuc_saveToAlbumWithAppLocalizedName()
 
+image.tuc_saveToAlbumWithAppLocalizedName(success:{() in
+
+}, failure: {(status) in 
+    switch(satus) {
+        case .denied:
+            print("save to camera roll: success!")
+            break
+        case .restricted:
+            print("save to camera roll: Denied!")
+    }
+})
+
+```
 ### save to custom name album
 ```objective-c
 [image tuc_saveToAlbumWithAlbumName:@"any album name here"];
@@ -64,7 +115,25 @@ app localized name -> InfoPlist.string -> CFBundleName
     NSLog(@"save to custom name album: Denied!");
 }];
 ```
+*OR Swift*
+```swift
+image.tuc_saveTo(album:"any album name here")
 
+image.tuc_saveTo(album:"any album name here", 
+    success:{() in
+
+    },
+    failure: {(status) in 
+    switch(satus) {
+        case .denied:
+            print("save to camera roll: success!")
+            break
+        case .restricted:
+            print("save to camera roll: Denied!")
+    }
+})
+
+```
 ## License
 
 Mantle is released under the MIT license. See
