@@ -126,10 +126,15 @@
     }
     
     __block NSString *collectionIdentity = nil;
-    [[PHPhotoLibrary sharedPhotoLibrary] performChangesAndWait:^{
+    BOOL performedChanges = [[PHPhotoLibrary sharedPhotoLibrary] performChangesAndWait:^{
         collectionIdentity = [PHAssetCollectionChangeRequest creationRequestForAssetCollectionWithTitle:albumName].placeholderForCreatedAssetCollection.localIdentifier;
     } error:nil];
-    return [PHAssetCollection fetchAssetCollectionsWithLocalIdentifiers:@[collectionIdentity] options:nil].firstObject;
+
+    if(performedChanges) {
+        return [PHAssetCollection fetchAssetCollectionsWithLocalIdentifiers:@[collectionIdentity] options:nil].firstObject;
+    }
+
+    return nil;
 }
 
 - (void)addNewAssetToAlbum:(PHAssetCollection *)album success:(nullable void (^)())successBlock {
